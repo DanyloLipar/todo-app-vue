@@ -1,0 +1,115 @@
+@import '../../styles/vars.scss';
+@import '../../styles/mixins.scss';
+
+.general {
+    position: relative;
+    background: $card-bckg;
+    border-radius: 6px;
+    height: 634px;
+    width: 640px;
+    overflow-y: scroll;
+
+    @include onMobile {
+        width: 346px;
+        margin-left: 14px;
+        margin-right: 14px;
+    }
+
+    &__bottom {
+        position: sticky;
+        height: 57px;
+        background: linear-gradient(0deg, #EDEDED 0%, rgba(237, 237, 237, 0) 164.04%);
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+
+    &::-webkit-scrollbar {
+        width: 4px;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background: $general-color;
+        border-radius: 40px;
+    }
+}
+
+.todos {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+    margin: 32px 33px 0;
+
+    @include onMobile {
+        margin: 38px 18px 0;
+        gap: 15px;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        list-style-type: none;
+    }
+
+    &__search {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        @include onMobile {
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 32px;
+        }
+
+        &-title {
+            font-size: 20px;
+            font-weight: bold;
+            line-height: 23.44px;
+
+            @include onMobile {
+                margin-left: 5px;
+            }
+        }
+
+        &-inp {
+            width: 161px;
+            height: 41px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+
+            @include onMobile {
+                width: 100%;
+            }
+
+            &:focus {
+                outline: none;
+            }
+
+            &::placeholder {
+                padding-left: 27px;
+            }
+        }
+    }
+
+    &__select {
+        font-size: 15px;
+        line-height: 25px;
+
+        @include onMobile {
+            display: none;
+        }
+
+        &>a {
+            color: $black-color;
+            text-decoration: none;
+            cursor: pointer;
+
+            &:focus {
+                color: $general-color;
+            }
+        }
+    }
+}

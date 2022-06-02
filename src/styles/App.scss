@@ -1,0 +1,50 @@
+@import './vars.scss';
+@import './normalize.scss';
+@import './mixins.scss';
+
+.box {
+
+    &__heading {
+        background-color: $general-color;
+        height: 74px;
+        width: 100%;
+    }
+}
+
+.content {
+    margin: 0 auto 151px;
+    max-width: 1191px;
+    padding: 0 123px;
+
+    @include onMobile {
+        padding: 0;
+        margin: 0 auto 5px;
+        width: fit-content;
+    }
+
+    &__desc {
+        font-size: 45px;
+        line-height: 52.73px;
+        font-weight: bold;
+        margin-top: 52px;
+
+        @include onMobile {
+            padding-left: 21px;
+            font-size: 30px;
+            line-height: 35.16px;
+        }
+    }
+
+    &__blocks {
+        display: flex;
+        gap: 33px;
+        margin-top: 60px;
+
+        @include onMobile {
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin-top: 30px;
+        }
+    }
+}
