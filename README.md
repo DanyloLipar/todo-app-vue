@@ -1,6 +1,9 @@
 # todo-list-app
+['DEMO'](https://danylolipar.github.io/todo-app-vue/)
 
-## Project setup
+## Technologies stack
+    HTML/SASS(SCSS)/BEM/Vue
+
 ```
 npm install
 ```
@@ -18,7 +21,4 @@ npm run build
 ### Lints and fixes files
 ```
 npm run lint
-```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).

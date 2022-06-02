@@ -12,7 +12,8 @@
         />
         <button
           type="submit" 
-          class="add__items-btn btn"   
+          class="add__items-btn btn"
+          v-on:click="clearForm" 
           >
             <p class="btn__text">+</p>
         </button>
@@ -24,7 +25,7 @@
 export default {
   methods: {
     props: ['todos'],
-    
+
     data() {
       return {
         title: '',
@@ -41,9 +42,9 @@ export default {
         }
 
         this.$emit('add-todo', newTodo)
-        this.title = '';
+        event.target.reset()
       }
-    }
+    },
   }
 }
 </script>
