@@ -3,8 +3,6 @@
 
 ## Technologies stack
     HTML/SASS(SCSS)/BEM/Vue
-
-```
 npm install
 ```
 
