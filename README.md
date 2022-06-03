@@ -1,5 +1,5 @@
 # todo-list-app
-['DEMO'](https://danylolipar.github.io/todo-app-vue/)
+[DEMO LINK](https://danylolipar.github.io/todo-app-vue/)
 
 # Technologies stack
     HTML/SASS(SCSS)/BEM/Vue
